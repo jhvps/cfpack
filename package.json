@@ -1,0 +1,14 @@
+{
+  "name": "underwear-inv",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "db:init": "wrangler d1 execute inv-db --remote --file=./schema.sql",
+    "db:init:local": "wrangler d1 execute inv-db --local --file=./schema.sql"
+  },
+  "devDependencies": {
+    "wrangler": "^4.0.0"
+  }
+}

@@ -1,0 +1,14 @@
+name = "underwear-inv"
+main = "src/worker.js"
+compatibility_date = "2025-05-01"
+
+# 静态页面目录（public/index.html）
+[assets]
+directory = "./public"
+binding = "ASSETS"
+
+# D1 数据库：database_id 需要替换成 `wrangler d1 create inv-db` 返回的那一串
+[[d1_databases]]
+binding = "DB"
+database_name = "inv-db"
+database_id = "在这里粘贴你的 database_id"
